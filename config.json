@@ -1,5 +1,5 @@
 {
-    "CLIP_stop_at_last_layers": 1,
+    "CLIP_stop_at_last_layers": 2,
     "DAT_tile": 192,
     "DAT_tile_overlap": 8,
     "ESRGAN_tile": 192,
@@ -81,8 +81,8 @@
     "ddim_discretize": "uniform",
     "deepbooru_escape": true,
     "deepbooru_filter_tags": "",
-    "deepbooru_sort_alpha": true,
-    "deepbooru_use_spaces": true,
+    "deepbooru_sort_alpha": false,
+    "deepbooru_use_spaces": false,
     "dimensions_and_batch_together": true,
     "directories_filename_pattern": "[date]",
     "directories_max_prompt_words": 8,
@@ -133,7 +133,9 @@
         "face_restoration_model",
         "save_images_before_face_restoration",
         "code_former_weight",
-        "extra_options_img2img"
+        "extra_options_img2img",
+        "emphasis",
+        "CLIP_stop_at_last_layers"
     ],
     "extra_options_txt2img": [
         "tiling",
@@ -141,7 +143,9 @@
         "face_restoration_model",
         "save_images_before_face_restoration",
         "code_former_weight",
-        "extra_options_txt2img"
+        "extra_options_txt2img",
+        "emphasis",
+        "CLIP_stop_at_last_layers"
     ],
     "face_restoration": false,
     "face_restoration_model": "CodeFormer",
@@ -190,8 +194,6 @@
         "DPM2 Karras",
         "LMS Karras",
         "DPM++ SDE",
-        "DPM++ 2M",
-        "DPM++ 2S a",
         "DPM++ 2M SDE Heun Exponential",
         "DPM++ 2M SDE Karras",
         "DPM++ 2M SDE",
@@ -201,9 +203,11 @@
         "DPM2",
         "DPM++ 2M SDE Exponential",
         "Restart",
-        "DPM++ 3M SDE",
         "DPM++ 3M SDE Exponential",
-        "PLMS"
+        "PLMS",
+        "LCM",
+        "DDIM",
+        "DPM fast"
     ],
     "hires_fix_refiner_pass": "second pass",
     "hires_fix_show_prompts": true,
@@ -334,7 +338,7 @@
     "return_mask_composite": false,
     "rho": 0,
     "s_churn": 0,
-    "s_min_uncond": 2.5,
+    "s_min_uncond": 0,
     "s_noise": 1,
     "s_tmax": 0,
     "s_tmin": 0,
@@ -359,12 +363,12 @@
     "save_txt": false,
     "sd_checkpoint_cache": 0,
     "sd_checkpoint_dropdown_use_short": false,
-    "sd_checkpoint_hash": "e6bb9ea85bbf7bf6478a7c6d18b71246f22e95d41bcdd80ed40aa212c33cfeff",
+    "sd_checkpoint_hash": "030c8944838f0f9c761c870b617698c00cfc215c70087a0c76d21a8ff804f845",
     "sd_checkpoints_keep_in_cpu": true,
-    "sd_checkpoints_limit": 2,
+    "sd_checkpoints_limit": 1,
     "sd_hypernetwork": "None",
     "sd_lora": "None",
-    "sd_model_checkpoint": "SDXL_00_XLB_v10VAEFix.safetensors [e6bb9ea85b]",
+    "sd_model_checkpoint": "SDXL_19_P-ECL_everclearPNYByZovya_v3.safetensors [030c894483]",
     "sd_noise_schedule": "Default",
     "sd_unet": "Automatic",
     "sd_vae": "Automatic",
@@ -427,5 +431,13 @@
     "use_original_name_batch": true,
     "use_save_to_dirs_for_ui": false,
     "use_upscaler_name_as_suffix": true,
-    "webp_lossless": false
+    "webp_lossless": false,
+    "prioritized_callbacks_ui_tabs": [],
+    "prioritized_callbacks_cfg_after_cfg": [],
+    "prioritized_callbacks_after_component": [],
+    "prioritized_callbacks_on_reload": [],
+    "prioritized_callbacks_script_before_process_batch": [],
+    "prioritized_callbacks_script_postprocess": [],
+    "prioritized_callbacks_script_postprocess_batch": [],
+    "controlnet_control_type_dropdown": false
 }
