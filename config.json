@@ -1,5 +1,5 @@
 {
-    "CLIP_stop_at_last_layers": 2,
+    "CLIP_stop_at_last_layers": 1,
     "DAT_tile": 192,
     "DAT_tile_overlap": 8,
     "ESRGAN_tile": 192,
@@ -362,12 +362,12 @@
     "save_txt": false,
     "sd_checkpoint_cache": 0,
     "sd_checkpoint_dropdown_use_short": false,
-    "sd_checkpoint_hash": "030c8944838f0f9c761c870b617698c00cfc215c70087a0c76d21a8ff804f845",
+    "sd_checkpoint_hash": "41f3b63dc15410bc8d7cb88b3e97d85a8f7333682e00ca98bab3651c32daa923",
     "sd_checkpoints_keep_in_cpu": true,
     "sd_checkpoints_limit": 1,
     "sd_hypernetwork": "None",
     "sd_lora": "None",
-    "sd_model_checkpoint": "SDXL_19_P-ECL_everclearPNYByZovya_v3.safetensors [030c894483]",
+    "sd_model_checkpoint": "SDXL_02_P-GOD_goddessOfRealism_gorPONYV10.safetensors [41f3b63dc1]",
     "sd_noise_schedule": "Default",
     "sd_unet": "Automatic",
     "sd_vae": "Automatic",
@@ -438,5 +438,19 @@
     "prioritized_callbacks_script_before_process_batch": [],
     "prioritized_callbacks_script_postprocess": [],
     "prioritized_callbacks_script_postprocess_batch": [],
-    "controlnet_control_type_dropdown": false
+    "controlnet_control_type_dropdown": false,
+    "lora_bundled_ti_to_infotext": true,
+    "s_min_uncond_all": false,
+    "skip_early_cond": 0.05,
+    "sdxl_clip_l_skip": true,
+    "sd3_enable_t5": false,
+    "prevent_screen_sleep_during_generation": false,
+    "profiling_enable": false,
+    "profiling_activities": [
+        "CPU"
+    ],
+    "profiling_record_shapes": true,
+    "profiling_profile_memory": true,
+    "profiling_with_stack": true,
+    "profiling_filename": "trace.json"
 }
