@@ -94,7 +94,7 @@
     "do_not_show_images": false,
     "dont_fix_second_order_samplers_schedule": false,
     "dump_stacks_on_signal": false,
-    "emphasis": "No norm",
+    "emphasis": "Original",
     "enable_batch_seeds": true,
     "enable_console_prompts": false,
     "enable_emphasis": true,
@@ -135,7 +135,8 @@
         "code_former_weight",
         "extra_options_img2img",
         "emphasis",
-        "CLIP_stop_at_last_layers"
+        "CLIP_stop_at_last_layers",
+        "sigma_min"
     ],
     "extra_options_txt2img": [
         "tiling",
@@ -145,7 +146,8 @@
         "code_former_weight",
         "extra_options_txt2img",
         "emphasis",
-        "CLIP_stop_at_last_layers"
+        "CLIP_stop_at_last_layers",
+        "sigma_min"
     ],
     "face_restoration": false,
     "face_restoration_model": "CodeFormer",
@@ -362,12 +364,12 @@
     "save_txt": false,
     "sd_checkpoint_cache": 0,
     "sd_checkpoint_dropdown_use_short": false,
-    "sd_checkpoint_hash": "41f3b63dc15410bc8d7cb88b3e97d85a8f7333682e00ca98bab3651c32daa923",
+    "sd_checkpoint_hash": "335da0800ceedb2bc296b5cbec3ae57260b9b6b4c15da6d31bb3912f4c9059e0",
     "sd_checkpoints_keep_in_cpu": true,
     "sd_checkpoints_limit": 1,
     "sd_hypernetwork": "None",
     "sd_lora": "None",
-    "sd_model_checkpoint": "SDXL_02_P-GOD_goddessOfRealism_gorPONYV10.safetensors [41f3b63dc1]",
+    "sd_model_checkpoint": "SDXL_17_P-IND_indecentRealismFor_v20.safetensors [335da0800c]",
     "sd_noise_schedule": "Default",
     "sd_unet": "Automatic",
     "sd_vae": "Automatic",
@@ -452,5 +454,30 @@
     "profiling_record_shapes": true,
     "profiling_profile_memory": true,
     "profiling_with_stack": true,
-    "profiling_filename": "trace.json"
+    "profiling_filename": "trace.json",
+    "animatediff_model_path": "",
+    "animatediff_default_save_formats": [
+        "GIF",
+        "PNG"
+    ],
+    "animatediff_save_to_custom": true,
+    "animatediff_frame_extract_path": "",
+    "animatediff_frame_extract_remove": false,
+    "animatediff_default_frame_extract_method": "ffmpeg",
+    "animatediff_optimize_gif_palette": true,
+    "animatediff_optimize_gif_gifsicle": true,
+    "animatediff_mp4_crf": 20,
+    "animatediff_mp4_preset": "veryslow",
+    "animatediff_mp4_tune": "film",
+    "animatediff_webp_quality": 80,
+    "animatediff_webp_lossless": false,
+    "animatediff_s3_enable": false,
+    "animatediff_s3_host": "",
+    "animatediff_s3_port": "",
+    "animatediff_s3_access_key": "",
+    "animatediff_s3_secret_key": "",
+    "animatediff_s3_storge_bucket": "",
+    "prioritized_callbacks_cfg_denoiser": [],
+    "prioritized_callbacks_script_postprocess_batch_list": [],
+    "prioritized_callbacks_script_postprocess_image": []
 }
